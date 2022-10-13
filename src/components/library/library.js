@@ -37,10 +37,8 @@ const Library = () => {
   const sortItems = () => {
     if (sortFilter === SORT_FILTER.OLDEST_FIRST) {
       items.sort(({ id: a }, { id: b }) => b - a);
-      initialItems.sort(({ id: a }, { id: b }) => b - a);
     } else {
       items.sort(({ id: a }, { id: b }) => a - b);
-      initialItems.sort(({ id: a }, { id: b }) => a - b);
     }
   };
 
@@ -56,7 +54,6 @@ const Library = () => {
   const handleQuickReads = () => {
     if (quickReadsEnabled) {
       setItems(initialItems);
-      sortItems();
       setQuickReadsEnabled(false);
       setActive('');
     } else {
@@ -68,14 +65,6 @@ const Library = () => {
       setQuickReadsEnabled(true);
       setActive('active');
     }
-  };
-
-  const resetAll = () => {
-    setItems(initialItems);
-    setSortFilter(SORT_FILTER.OLDEST_FIRST);
-    sortItems();
-    setQuickReadsEnabled(false);
-    setActive('');
   };
 
   return (
@@ -111,15 +100,6 @@ const Library = () => {
             >
               Show quick reads
               <QuickReads quickReadsEnabled={quickReadsEnabled} />
-            </button>
-            <button
-              aria-label='Reset filters'
-              id='reset-filters'
-              className='filter'
-              data-testid='reset-filters'
-              onClick={() => resetAll()}
-            >
-              Reset filters
             </button>
           </div>
           <ul id='list' className='library-container'>
