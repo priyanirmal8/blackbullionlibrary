@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2% 4%;
+    align-items: center;
+    background-color: #160c3e;
+    color: #fff;
+    height: auto;
+}
+
+/* .header h2 {
+    font-size: 1.3rem;
+    line-break: anywhere;
+} */
+
+.header img {
+    margin-right: 30px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+@media only screen and (max-width: 450px) {
+    .header {
+        padding: 20px 10px;
+    }
+}

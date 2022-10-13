@@ -1,0 +1,57 @@
+[
+    {
+        "id": 90,
+        "title": "Investing Basics",
+        "internal_title": "Investing Basics - ZA",
+        "url": "https://www.blackbullion.com/pathways/investing-basics-za",
+        "intro": "Learn the fundamental concepts, and terminology, around investing.",
+        "duration": "19 min",
+        "image": "https://prodcontent.blackbullion.com/images/pathways/90/thumb",
+        "type": "pathway",
+        "has_summative_assessment": true
+    },
+    {
+        "id": 91,
+        "title": "Debt",
+        "internal_title": "Debt - ZA",
+        "url": "https://www.blackbullion.com/pathways/debt-za",
+        "intro": "Know how to use debt to your advantage. From credit scores to interest rates, and good debt to bad debt.",
+        "duration": "24 min",
+        "image": "https://prodcontent.blackbullion.com/images/pathways/91/thumb",
+        "type": "pathway",
+        "has_summative_assessment": true
+    },
+    {
+        "id": 92,
+        "title": "Budgeting 101",
+        "internal_title": "Budgeting",
+        "url": "https://www.blackbullion.com/pathways/budgeting",
+        "intro": "What is a budget? And why is it so important? We cover the basics of money, before getting into how to create a budget and stick to it.",
+        "duration": "16 min",
+        "image": "https://prodcontent.blackbullion.com/images/pathways/92/thumb",
+        "type": "pathway",
+        "has_summative_assessment": true
+    },
+    {
+        "id": 93,
+        "title": "Make budgeting work for you",
+        "internal_title": "Make budgeting work for you",
+        "url": "https://www.blackbullion.com/pathways/make-budgeting-work-for-you",
+        "intro": "Discover different budgeting styles, how to budget your student loan, the obstacles you might face and what to do about them.",
+        "duration": "12 min",
+        "image": "https://prodcontent.blackbullion.com/images/pathways/93/thumb",
+        "type": "pathway",
+        "has_summative_assessment": true
+    },
+    {
+        "id": 94,
+        "title": "Why University?",
+        "internal_title": "Why University? AU",
+        "url": "https://www.blackbullion.com/pathways/why-university-aus",
+        "intro": "We'll give you all the information you need to work out if going to university is the right choice for you.",
+        "duration": "4 min",
+        "image": "https://prodcontent.blackbullion.com/images/pathways/94/thumb",
+        "type": "pathway",
+        "has_summative_assessment": false
+    }
+]

@@ -1,0 +1,62 @@
+.library-container {
+    max-width: 100%;
+    padding: 2%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.library-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2% 4%;
+    align-items: center;
+}
+
+.library-filters .filter {
+    background-color: #ffd00b;
+    width: auto;
+    padding: 1%;
+    box-shadow: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-appearance: textfield;
+    margin: 0 1% 1% 0;
+}
+
+.library-filters select {
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.library-filters .filter:hover {
+    background-color: #160c3e;
+    color: #fff;
+}
+
+.library-filters .filter.quick-reads:hover svg {
+    fill: #ffd00b;
+}
+
+.library-filters .filter.quick-reads.active {
+    background-color: #160c3e;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .library-filters {
+        width: auto;
+        padding: 0 0 0 2%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .library-filters .filter {
+        margin: 3% 0;
+    }
+}
