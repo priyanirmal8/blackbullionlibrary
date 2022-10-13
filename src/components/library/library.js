@@ -71,7 +71,6 @@ const Library = () => {
       setQuickReadsEnabled(true);
       setActive('active');
     }
-    // sortItems(newItems);
     setItems(newItems);
   };
 
