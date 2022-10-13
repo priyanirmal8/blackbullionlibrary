@@ -14,7 +14,7 @@ const Card = (props) => {
         <img
           src={item.image}
           loading='lazy'
-          alt='Library image'
+          alt='Library item'
           width='300'
           height='168'
         />

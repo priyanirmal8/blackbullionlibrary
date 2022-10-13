@@ -20,7 +20,7 @@ test('renders card with item details', () => {
   expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent(
     item.title
   );
-  const image = screen.getByAltText('Library image');
+  const image = screen.getByAltText('Library item');
   expect(image.src).toContain(item.image);
 
   expect(screen.getByText('pathway•19 min')).toBeInTheDocument();
