@@ -34,37 +34,45 @@ const Library = () => {
     fetchData();
   }, []);
 
-  const sortItems = () => {
-    if (sortFilter === SORT_FILTER.OLDEST_FIRST) {
-      items.sort(({ id: a }, { id: b }) => b - a);
+  const sortItems = (array) => {
+    if (sortFilter === SORT_FILTER.NEWEST_FIRST) {
+      if (array[0].id > array[1].id) {
+        return array.reverse();
+      }
     } else {
-      items.sort(({ id: a }, { id: b }) => a - b);
+      if (array[0].id < array[1].id) {
+        return array.reverse();
+      }
     }
   };
 
   const handleSort = (e) => {
-    if (e === SORT_FILTER.OLDEST_FIRST) {
-      setSortFilter(SORT_FILTER.OLDEST_FIRST);
-    } else {
+    if (e === SORT_FILTER.NEWEST_FIRST) {
       setSortFilter(SORT_FILTER.NEWEST_FIRST);
+    } else {
+      setSortFilter(SORT_FILTER.OLDEST_FIRST);
     }
-    sortItems();
+
+    sortItems(items);
   };
 
   const handleQuickReads = () => {
+    let newItems;
     if (quickReadsEnabled) {
-      setItems(initialItems);
+      newItems = initialItems;
       setQuickReadsEnabled(false);
       setActive('');
     } else {
-      const newItems = items.filter((item) => {
+      newItems = items.filter((item) => {
         let duration = item.duration.match(/\d+/g);
         return parseInt(duration) <= 10;
       });
-      setItems(newItems);
+
       setQuickReadsEnabled(true);
       setActive('active');
     }
+    // sortItems(newItems);
+    setItems(newItems);
   };
 
   return (
